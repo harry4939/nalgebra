@@ -167,6 +167,10 @@ pub use num_complex::Complex;
 pub use simba::scalar::{
     ClosedAdd, ClosedDiv, ClosedMul, ClosedSub, ComplexField, Field, RealField,
 };
+/*
+pub use is used to re-export an item from another module. It's similar to a wildcard import. In this case, 
+the code is importing the following traits and types from the simba crate and then re-exporting them:
+*/
 pub use simba::simd::{SimdBool, SimdComplexField, SimdPartialOrd, SimdRealField, SimdValue};
 
 /// Gets the multiplicative identity element.
